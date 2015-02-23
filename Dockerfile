@@ -27,6 +27,7 @@ RUN mkdir -p  /var/www/simple-app/tmp/sockets
 RUN mkdir -p  /var/www/simple-app/tmp/log
 
 # used by Rails' config/secrets.yml
+# obviously, this should not go here in a real world app
 ENV SECRET_KEY_BASE 6cfe9ad62d67e58d3f380c2fe3d69edf3f31aaa6a1623f5ff5e7d31271e4070e17ec226a9cf230b6b2ec5559bce032033171ca7c8f5526afc0853bba6fc21078
 
 WORKDIR /var/www/simple-app
